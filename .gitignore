@@ -104,6 +104,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# config
+/config
 
 ### VisualStudioCode ###
 .vscode/*
