@@ -105,7 +105,7 @@ typings/
 .env
 
 # config
-/config
+*/config
 
 ### VisualStudioCode ###
 .vscode/*
