@@ -48,6 +48,7 @@ class Channels extends React.Component {
   addChannel = () => {
     const { channelsRef, channelName, channelDetails, user } = this.state;
     const key = channelsRef.push().key;
+
     const newChannel = {
       id: key,
       name: channelName,
@@ -109,6 +110,7 @@ class Channels extends React.Component {
     channelName && channelDetails;
 
   openModal = () => this.setState({ modal: true });
+
   closeModal = () => this.setState({ modal: false });
 
   render() {
@@ -116,7 +118,7 @@ class Channels extends React.Component {
 
     return (
       <React.Fragment>
-        <Menu.Menu style={{ paddingBottom: "2em" }}>
+        <Menu.Menu className="menu">
           <Menu.Item>
             <span>
               <Icon name="exchange" /> CHANNELS
